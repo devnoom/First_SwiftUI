@@ -10,15 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("ზღაპრის ბოლო კეთილია").font(.title).padding()
+            Spacer()
+            HStack {
+                FirstCase().cornerRadius(25)
+                VStack {
+                    SecondCase().cornerRadius(25)
+                    ThirdCase().cornerRadius(25)
+                }
+            }
+            Spacer()
+            ScrollCase()
+           
         }
-        .padding()
+       
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
