@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SecondCase: View {
+    @Binding var backgroundImageName: String
     var body: some View {
         ZStack {
             Rectangle()
@@ -22,7 +23,7 @@ struct SecondCase: View {
                             .frame(width: 35, height: 35)
                         
                         Button(action: {
-                            // Action for chat button
+                            backgroundImageName = "background1"
                         }) {
                             Image("chat")
                                 .resizable()
@@ -48,7 +49,7 @@ struct SecondCase: View {
                     Spacer()
                     Image("bluechat")
                         .resizable()
-                        .frame(width: 60, height: 60)
+                        .frame(width: 80, height: 90)
                 }
             }
             .padding([.bottom], 10)

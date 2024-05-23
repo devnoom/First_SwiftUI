@@ -49,7 +49,7 @@ struct ThirdCase: View {
                         Spacer()
                         Image("trumpet")
                             .resizable()
-                            .frame(width: 60, height: 60)
+                            .frame(width: 80, height: 90)
                     }
                 }
             }

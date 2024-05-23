@@ -44,10 +44,15 @@ struct ScrollCase: View {
                             .foregroundColor(.gray)
                     }
                     .padding(.leading, 8)
-                }
+                    
+                }.listRowBackground(Color.clear)
                 .padding(.vertical, 8)
+                
             }
-        }
+            
+        }.listStyle(PlainListStyle())
+        
+        
     }
 }
 
